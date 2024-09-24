@@ -41,7 +41,7 @@ class SuccessPage extends StatelessWidget {
               },
             
               child: const Text(
-                'Start Searching Again',
+                'Search Again',
                 style: TextStyle(
                   fontSize: 16,
                   color: Colors.white,
