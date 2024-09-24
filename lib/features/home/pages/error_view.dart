@@ -1,4 +1,3 @@
-// features/home/pages/error_view.dart
 import 'package:blu/features/home/bloc/homepage_event.dart';
 import 'package:flutter/material.dart';
 import '../bloc/homepage_bloc.dart';
@@ -30,7 +29,8 @@ class ErrorView extends StatelessWidget {
               padding: const EdgeInsets.symmetric(horizontal: 25, vertical: 10),
             ),
             onPressed: () {
-              context.read<HomepageBloc>().add(HomepageButtonClicked());
+             context.read<HomepageBloc>().add(HomepageButtonClicked()); 
+               // Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage()));
             },
             child: const Text(
               'Retry',

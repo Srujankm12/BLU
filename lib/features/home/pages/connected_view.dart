@@ -1,4 +1,4 @@
-// features/home/pages/connected_view.dart
+
 import 'package:blu/features/home/bloc/homepage_state.dart';
 import 'package:blu/features/home/pages/homepage.dart';
 import 'package:blu/features/home/widgets/textfield.dart';

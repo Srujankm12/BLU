@@ -26,8 +26,6 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'BLU',
       theme: ThemeData(
-        
-        //primarySwatch: Colors.blue,
       ),
       
       home: (token != null)
