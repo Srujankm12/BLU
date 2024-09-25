@@ -27,7 +27,6 @@ class _DeviceListViewState extends State<DeviceListView> {
   Future<void> _checkBluetoothState() async {
     bluetoothState = await FlutterBluetoothSerial.instance.state;
     setState(() {});
-    // Optionally, listen for Bluetooth state changes
     FlutterBluetoothSerial.instance.onStateChanged().listen((state) {
       setState(() {
         bluetoothState = state;
@@ -49,7 +48,11 @@ class _DeviceListViewState extends State<DeviceListView> {
         const SizedBox(height: 0),
         Text(
           bluetoothState == BluetoothState.STATE_ON ? "Bluetooth is ON" : "Bluetooth is OFF",
-          style: const TextStyle(color: Colors.black, fontSize: 18, fontWeight: FontWeight.bold),
+          style: const TextStyle(
+            color: Colors.black, 
+            fontSize: 18, 
+            fontWeight: FontWeight.bold
+            ),
         ),
         const SizedBox(height: 20),
         DropdownButtonFormField<BluetoothDevice>(

@@ -13,5 +13,7 @@ class AuthLoadingState extends AuthState{}
 
  class AuthErrorState extends AuthState{
   final String error;
-  AuthErrorState({required this.error});
+  AuthErrorState({
+    required this.error
+    });
 }
