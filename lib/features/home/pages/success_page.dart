@@ -1,12 +1,13 @@
-import 'package:blu/features/home/bloc/homepage_bloc.dart';
-import 'package:blu/features/home/bloc/homepage_event.dart';
-import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
 
+import 'package:blu/features/home/pages/homepage.dart';
+import 'package:flutter/material.dart';
 class SuccessPage extends StatelessWidget {
   final String message;
 
-  const SuccessPage({Key? key, required this.message}) : super(key: key);
+  const SuccessPage({
+    Key? key,
+     required this.message
+    }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -36,8 +37,8 @@ class SuccessPage extends StatelessWidget {
               ),
               
               onPressed: () {
-                context.read<HomepageBloc>().add(HomepageButtonClicked());
-              //  Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage()));
+                //context.read<HomepageBloc>().add(HomepageButtonClicked()); 
+               Navigator.pushReplacement(context, MaterialPageRoute(builder: (context) => const HomePage()));
               },
             
               child: const Text(
