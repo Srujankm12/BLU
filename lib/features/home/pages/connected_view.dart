@@ -2,7 +2,7 @@
 import 'package:blu/features/home/bloc/homepage_state.dart';
 import 'package:blu/features/home/pages/homepage.dart';
 import 'package:blu/features/home/widgets/textfield.dart';
-import 'package:blu/features/home/pages/success_page.dart';
+import 'package:blu/features/success/pages/success_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_bluetooth_serial/flutter_bluetooth_serial.dart';
