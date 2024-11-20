@@ -1,4 +1,4 @@
-package com.example.blu
+package com.vsense.blu
 
 import io.flutter.embedding.android.FlutterActivity
 
